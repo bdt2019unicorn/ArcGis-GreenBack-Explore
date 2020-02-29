@@ -8,11 +8,7 @@ export function AddDirectionsWidget(Directions, view)
             (
                 {
                     view: view,
-                    routeTaskUrl: "https://utility.arcgis.com/usrsvcs/appservices/srsKxBIxJZB0pTZ0/rest/services/World/Route/NAServer/Route_World",
-                    stops: 
-                    [
-                        [[174.816448,-36,902955],[174.85,-36.88]]
-                    ]
+                    routeTaskUrl: "https://utility.arcgis.com/usrsvcs/appservices/AVA7HfDc1IGamElH/rest/services/World/Route/NAServer/Route_World/solve"
                 }
             ); 
             view.ui.add(directions, ui_position);
