@@ -1,15 +1,3 @@
-function PutAnotherPoint()
-{
-    var variation = Math.random()*Math.random()*Math.random(); 
-    var location = 
-    {
-        longitude: 174.7635+variation, 
-        latitude: -36.8487 + variation
-    }
-
-    window.PutTreeOnMap.GetDataAroundLocation(location, window.map_view, window.ArcGis); 
-}
-
 function GetDirectionPointsAndWork()
 {
     var random_variation = Math.random()*Math.random(); 
@@ -40,12 +28,9 @@ function GetDirectionPointsAndWork()
 
 function GetDirection(points, view)
 {
-    console.log("get here to the get direction"); 
     var routeTask = new window.ArcGis.RouteTask
     (
         {
-            // url: "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
-            // url: "https://utility.arcgis.com/usrsvcs/appservices/blastor555/rest/services/World/Route/NAServer/Route_World/solve"
             url: "https://utility.arcgis.com/usrsvcs/appservices/AVA7HfDc1IGamElH/rest/services/World/Route/NAServer/Route_World/solve"
         }
     );
