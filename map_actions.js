@@ -17,7 +17,8 @@ function GetDirectionPointsAndWork()
         new window.ArcGis.Point(174.816448, -36.902955),
         new window.ArcGis.Point(174.7633, -36.8485)
     ]; 
-    GetDirection(points, window.map_view); 
+    // GetDirection(points, window.map_view); 
+    console.log(points); 
 }
 
 

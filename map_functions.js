@@ -11,7 +11,7 @@ InnitizeMap.then
         var view = view_and_arcgis_class.view; 
         var arcgis = view_and_arcgis_class.ArcGis; 
         AddLocationWidget(arcgis.Locate, view); 
-        AddDirectionsWidget(arcgis.Directions, view); 
+        // AddDirectionsWidget(arcgis.Directions, view); 
         GetDataAroundLocation
         (
             {
