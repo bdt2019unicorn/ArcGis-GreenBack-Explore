@@ -12,10 +12,11 @@ function PutAnotherPoint()
 
 function GetDirectionPointsAndWork()
 {
+    var random_variation = Math.random()*Math.random(); 
     var points = 
     [
-        new window.ArcGis.Point(174.816448, -36.902955),
-        new window.ArcGis.Point(174.7633, -36.8485)
+        new window.ArcGis.Point(174.816448-random_variation, -36.902955+random_variation),
+        new window.ArcGis.Point(174.7633+ random_variation, -36.8485+random_variation)
     ]; 
     var graphics = []; 
     points.forEach(element => {
