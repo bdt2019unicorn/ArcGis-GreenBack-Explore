@@ -19,11 +19,16 @@ function GetDirectionPointsAndWork()
     ]; 
     // GetDirection(points, window.map_view); 
     console.log(points); 
+    points.forEach(element => {
+        window.map_view.graphics.add(element); 
+    });
+    GetDirection(view.graphics.items, view); 
 }
 
 
 function GetDirection(points, view)
 {
+    console.log("get here to the get direction"); 
     var routeTask = new window.ArcGis.RouteTask
     (
         {
