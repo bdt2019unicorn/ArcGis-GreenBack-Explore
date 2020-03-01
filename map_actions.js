@@ -23,7 +23,7 @@ function GetDirectionPointsAndWork()
         var graphic = new window.ArcGis.Graphic 
         (
             {
-                geometry: points, 
+                geometry: element, 
                 symbol: 
                 {
                     type: "simple-marker",
