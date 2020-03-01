@@ -9,7 +9,7 @@ export function AddDirectionsWidget(Directions, view)
                 {
                     view: view,
                     routeServiceUrl: "https://utility.arcgis.com/usrsvcs/appservices/AVA7HfDc1IGamElH/rest/services/World/Route/NAServer/Route_World", 
-                    stops: [ new window.ArcGis.Point(174.816448, -36.902955), new window.ArcGis.Point(174.816448, -36.902952)]
+                    _stops: [ new window.ArcGis.Point(174.816448, -36.902955), new window.ArcGis.Point(174.816448, -36.902952)]
                 }
             ); 
             view.ui.add(directions, ui_position);
