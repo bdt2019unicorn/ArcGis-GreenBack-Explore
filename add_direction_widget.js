@@ -8,16 +8,10 @@ export function AddDirectionsWidget(Directions, view)
             (
                 {
                     view: view,
-                    routeServiceUrl: "https://utility.arcgis.com/usrsvcs/appservices/AVA7HfDc1IGamElH/rest/services/World/Route/NAServer/Route_World", 
-                    _stops: [ new window.ArcGis.Point(174.816448, -36.902955), new window.ArcGis.Point(174.816448, -36.902952)]
+                    routeServiceUrl: "https://utility.arcgis.com/usrsvcs/appservices/AVA7HfDc1IGamElH/rest/services/World/Route/NAServer/Route_World"
                 }
             ); 
             view.ui.add(directions, ui_position);
-            console.log(directions); 
-            console.log("stops"); 
-            console.log(directions.stops); 
-            console.log("_stops"); 
-            console.log(directions._stops); 
 
         }
     }
