@@ -12,6 +12,7 @@ export function AddDirectionsWidget(Directions, view)
                 }
             ); 
             view.ui.add(directions, ui_position);
+            console.log(directions); 
         }
     }
     support_functions.PutLocationWidget("top-right");   
