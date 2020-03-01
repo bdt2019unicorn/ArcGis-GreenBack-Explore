@@ -20,7 +20,19 @@ function GetDirectionPointsAndWork()
     // GetDirection(points, window.map_view); 
     console.log(points); 
     points.forEach(element => {
-        window.map_view.graphics.add(element); 
+        var graphic = new window.ArcGis.Graphic 
+        (
+            {
+                geometry: points, 
+                symbol: 
+                {
+                    type: "simple-marker",
+                    color: "blue",  
+                    size: "8px"
+                }
+            }
+        ); 
+        window.map_view.graphics.add(graphic); 
     });
     GetDirection(window.map_view.graphics.items, window.map_view); 
 }
