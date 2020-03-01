@@ -1,7 +1,6 @@
 import {InnitizeMap} from "./innitialize_map.js"; 
 import {AddLocationWidget} from "./add_location_widget.js"; 
-import {AddDirectionsWidget} from "./add_direction_widget.js"; 
-import {GetDataAroundLocation} from "./put_trees_in_map.js"; 
+import * as PutTreeOnMap from "./put_trees_in_map.js"; 
 
 
 InnitizeMap.then
@@ -11,8 +10,7 @@ InnitizeMap.then
         var view = view_and_arcgis_class.view; 
         var arcgis = view_and_arcgis_class.ArcGis; 
         AddLocationWidget(arcgis.Locate, view); 
-        // AddDirectionsWidget(arcgis.Directions, view); 
-        GetDataAroundLocation
+        PutTreeOnMap.GetDataAroundLocation
         (
             {
                 longitude: view.center.longitude, 
@@ -23,6 +21,6 @@ InnitizeMap.then
         ); 
         window.map_view = view; 
         window.ArcGis = arcgis; 
-        window.GetDataAroundLocation = GetDataAroundLocation; 
+        window.PutTreeOnMap = PutTreeOnMap; 
     }
 ); 

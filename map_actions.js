@@ -7,7 +7,7 @@ function PutAnotherPoint()
         latitude: -36.8487 + variation
     }
 
-    window.GetDataAroundLocation(location, window.map_view, window.ArcGis); 
+    window.PutTreeOnMap.GetDataAroundLocation(location, window.map_view, window.ArcGis); 
 }
 
 function GetDirectionPointsAndWork()

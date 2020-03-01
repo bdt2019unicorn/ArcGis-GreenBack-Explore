@@ -11,7 +11,6 @@ function PopUpTemplate()
     content_node.innerHTML = 
     `
         <p>Here is my content</p>
-        <p><button type="button" onclick="TestEverything()">Test me</button></p>
     `; 
     return {
         title: "This is my point", 
@@ -33,11 +32,13 @@ function PutPointInTheMap(Graphic, map_point, view, popupTemplate)
     view.graphics.add(point); 
 }
 
-export function GetDataAroundLocation(location, view, ArcGis, condition=undefined)
+function GetDataAroundLocation(location, view, ArcGis, condition=undefined)
 {
     var variation = 0.01; 
     var new_location = new ArcGis.Point(location.longitude-variation, location.latitude-variation); 
     var popupTemplate = PopUpTemplate(); 
     PutPointInTheMap(ArcGis.Graphic, new_location, view, popupTemplate); 
 }
+
+export{PopUpTemplate, PutPointInTheMap, GetDataAroundLocation}
 
