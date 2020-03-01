@@ -13,6 +13,11 @@ export function AddDirectionsWidget(Directions, view)
             ); 
             view.ui.add(directions, ui_position);
             console.log(directions); 
+            console.log("stops"); 
+            console.log(directions.stops); 
+            console.log("_stops"); 
+            console.log(directions._stops); 
+
         }
     }
     support_functions.PutLocationWidget("top-right");   
