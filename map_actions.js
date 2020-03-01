@@ -22,7 +22,7 @@ function GetDirectionPointsAndWork()
     points.forEach(element => {
         window.map_view.graphics.add(element); 
     });
-    GetDirection(view.graphics.items, view); 
+    GetDirection(window.map_view.graphics.items, window.map_view); 
 }
 
 
